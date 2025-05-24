@@ -62,7 +62,9 @@ head = 3.0 if input("Executioner? Y/N ").lower() == "y" else 2.5
 vt = int(input("Enter how many Vital Targets perks you have: "))
 wp = int(input("Enter how many Weak Points perks you have: "))
 
-print("\nStandard Frontline Swat (75 HP):\n")
+print("Standard Swat units have 75 HP and either Scout or Frontline armor.")
+
+print("\nFrontline Armor:\n")
 print("Close Range (0-15 studs)")
 close_damage_head = round(damage_calc(chosen_gun[0], vt, wp, chosen_gun[1], "Frontline", True),2)
 close_damage_body = round(damage_calc(chosen_gun[0], vt, wp, chosen_gun[1], "Frontline", False),2)
@@ -79,7 +81,7 @@ long_damage_body = round(damage_calc(chosen_gun[0], vt, wp, chosen_gun[3], "Fron
 print("Headshot damage: " + str(long_damage_head))
 print("Bodyshot damage: " + str(long_damage_body))
 
-print("\nStandard Scout Swat (75 HP):\n")
+print("\nScout Armor:\n")
 print("Close Range (0-15 studs)")
 close_damage_head = round(damage_calc(chosen_gun[0], vt, wp, chosen_gun[1], "Scout", True),2)
 close_damage_body = round(damage_calc(chosen_gun[0], vt, wp, chosen_gun[1], "Scout", False),2)
